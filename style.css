@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'MICEMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEMyungjo.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+}
+div{
+    display:block;
+
+}
+.header{
+    font-family: 'MICEMyungjo';
+    height:10%;
+    background-color: rgb(229, 229, 229);
+}
+.header img, h3{
+    margin-left:45%;
+}
+.top{
+    z-index:1;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
