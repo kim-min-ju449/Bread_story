@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin:0;
 }
@@ -38,14 +44,54 @@ ul {
 
 li {
    
+   
     background-color: rgb(198, 198, 198);
     padding-top:5px;
     padding-left: 12%;
-    border : 0;
+    border : 0;   
+    /* float: left; */
     
-    float: left;
 }
 .menu{
     background-color: rgb(198, 198, 198);
     
+}
+#menu{
+    background-color: rgb(198, 198, 198);
+    width: 100%; 
+    margin:0;
+}
+nav ul{
+    font-family: 'EarlyFontDiary';
+    padding-top:10px;
+    padding-bottom:10px;
+    text-decoration: none;
+}    
+a{
+    text-decoration: none;
+
+}                
+nav ul li{
+    
+   display:inline;                         
+   border-left:1px solid #999;            
+   padding-top:5px;
+   padding-bottom:5px;
+   padding-left: 12%;
+   padding:0 7%;  
+   width:100%;  
+                   
+}
+nav ul li:first-child{
+    border-left:none;
+}
+.main{
+    margin-top: 40px;
+}
+.jg{
+    margin-left:50%;
+}
+.ml{
+    width:100%;
+    height:70vh;
 }

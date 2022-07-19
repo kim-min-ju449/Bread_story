@@ -7,25 +7,49 @@
     <link href="style.css" rel="stylesheet" />
     <link href="https://cdn.pixabay.com/photo/2014/04/02/16/19/bread-306914_1280.png" rel="shortcut icon" type="image/x-icon">
     <title>BreadStory</title>
+    <script>
+        var imgArray = new Array();
+        imgArray[0] = "https://cdn.pixabay.com/photo/2016/11/16/18/56/accompaniment-1829678_1280.jpg";
+        imgArray[1] = "https://cdn.pixabay.com/photo/2015/09/16/20/10/dough-943245_1280.jpg";
+        imgArray[2] = "https://cdn.pixabay.com/photo/2017/10/18/17/08/bread-2864792_1280.jpg";
+        imgArray[3] = "https://cdn.pixabay.com/photo/2021/12/19/15/18/christmas-stars-6881348_1280.jpg";
+        imgArray[4] = "https://cdn.pixabay.com/photo/2017/10/16/09/02/cake-2856551_1280.jpg";
+ 
+        function showImage() {
+            var imgNum = Math.round(Math.random() * 4);
+            var objImg = document.getElementById("introImg");
+            objImg.src = imgArray[imgNum];
+ 
+            setTimeout("showImage()", 2000);
+        }
+    </script>
 </head>
-<body>
+<body onload="showImage()">
     <div class="container">
         <div class="header">
             <img src="https://cdn.pixabay.com/photo/2014/04/02/16/19/bread-306914_1280.png" width="10%"; height="10%">
             <h3>BreadStory</h3>
-            <div class="menu">
-                <div class="topMenu" >
+            <div id="menu">   
+                <nav>
                     <ul>
-                            <li><a class="menuLink" href="#">MENU1</a></li>
-                            <li><a class="menuLink" href="#">MENU2</a></li>
-                            <li><a class="menuLink" href="#">MENU3</a></li>
-                            <li><a class="menuLink" href="#">MENU4</a></li> 
-                    </ul>
-                </div>
+                        <li><a href="#">제빵이야기</a></li>
+                        <li><a href="#">제과이야기</a></li>
+                        <li><a href="#">나에게 어울리는 빵은?</a></li>
+                        <li><a href="#">커뮤니티</a></li>
+                     
+                    </ul>   
+                </nav>
+            </div>
         </div>
+        <div class="top">
+            <img id="introImg"  class="ml">
         </div>
-        <div class="top"></div>
-        <div class="main"></div>
+        <div class="main">
+            <div class="jg">
+                
+                <img src="https://cdn.pixabay.com/photo/2018/05/14/03/21/dessert-3398645_1280.jpg" width="90%"; height="300px">
+            </div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>
