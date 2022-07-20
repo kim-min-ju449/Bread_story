@@ -11,10 +11,13 @@
     font-style: normal;
 }
 *{
+    font-family: 'EarlyFontDiary';
     margin:0;
+    
 }
 div{
     display:block;
+    overflow: hidden;
 
 }
 .header{
@@ -69,6 +72,7 @@ nav ul{
 }    
 a{
     text-decoration: none;
+    color:black;
 
 }                
 nav ul li{
@@ -85,13 +89,43 @@ nav ul li{
 nav ul li:first-child{
     border-left:none;
 }
+a:hover{
+    color:blue;
+}
 .main{
     margin-top: 40px;
 }
-.jg{
+.jg img{
     margin-left:50%;
+}
+.jp{
+    margin-bottom:50px;
+}
+.jp img{
+    margin-left:5%;
 }
 .ml{
     width:100%;
     height:70vh;
+}
+.main{
+    font-family: 'EarlyFontDiary';
+}
+
+.jg p{
+    position: absolute;
+    display: block;
+    left:10%;
+    font-size:1.5em;
+  
+}
+.show{
+    position:absolute; 
+}
+.jp p{
+    position: relative;
+    display: block;
+    left:55%;
+    font-size:1.5em;
+  
 }
